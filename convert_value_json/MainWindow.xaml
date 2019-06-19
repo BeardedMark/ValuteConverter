@@ -1,0 +1,28 @@
+﻿<Window x:Class="convert_value_json.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:convert_value_json"
+        mc:Ignorable="d"
+        Title="Valute Converter" Height="125.393" Width="370.643" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Margin="8">
+            <Label Content="Валюта 1" x:Name="out_kol" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="original" Text="1" HorizontalContentAlignment="Center"/>
+            <Label x:Name="out_label" Content="Выбрать валюту" HorizontalContentAlignment="Center" Cursor="Hand" MouseDown="StackPanel_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="2" Margin="8">
+            <Label Content="Валюта 2" x:Name="in_kol" HorizontalContentAlignment="Center"/>
+            <TextBox x:Name="result" Text="1" HorizontalContentAlignment="Center"/>
+            <Label x:Name="in_label" Content="Выбрать валюту" HorizontalContentAlignment="Center" Cursor="Hand" MouseDown="StackPanel_MouseDown"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
